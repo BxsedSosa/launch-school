@@ -1,0 +1,105 @@
+# A function that return the sum of two numbers
+
+Start 
+  Set:
+    - Number 1
+    - Number 2
+    - opertation
+
+  Get:
+    - 1st number from user
+    - 2nd number from user
+    - opertation from user
+
+  Print:
+    - Number 1 + opertation + Number 2
+End
+
+
+#  a function that takes an array of strings, and returns a string that is all those strings concatenated together 
+
+Start
+  Set:
+    - Combined strings
+
+  Get:
+    - Array of strings
+
+  While:
+    - index < array
+      - Combined variable + array[index]
+
+  Read:
+    -return Combined variable
+  
+  Print:
+    -Combined variable
+End
+
+# a method that takes an array of integers, and returns a new array with every other element from the original array, starting with the first element. For instance: 
+
+Start
+  Set:
+    - New Array
+
+  Get:
+    - Array from user
+
+  While:
+    - index = 0 < array
+      - increment index + 2 (So index will always skip over the next index)
+
+  Read:
+    -return New Array
+
+  Print:
+    - New Array
+End
+
+# a function that determines the index of the 3rd occurrence of a given character in a string. For instance, if the given character is 'x' and the string is 'axbxcdxex', the function should return 6 (the index of the 3rd 'x'). If the given character does not occur at least 3 times, return null. 
+
+Start
+  Set:
+    - Occurrence
+  
+  Get:
+    - Need string from user
+      - Then break the string back into an array of each character
+    - Which value they want to check for 
+
+  While:
+    - Iterate over each character
+      If: Character matches the value that was wanted to check for
+        - Occurrence += 1
+
+      Else: Continue interating through the string
+
+  If:
+    - If Occurrence === 3
+      - Return the location of the index the 3rd occurance happened
+    - Else 
+      - Return null
+End
+
+# a function that takes two arrays of numbers and returns the result of merging the arrays. The elements of the first array should become the elements at the even indexes of the returned array, while the elements of the second array should become the elements at the odd indexes. For instance: 
+
+Start
+  Set:
+    - New Array to length of both arrays given
+
+  Get:
+    - Number of Array 1
+    - Number of Array 2
+  
+  While:
+    -Iterate over Array 1
+      - push current value of the index to every odd position of the new array
+    -Iterate over Array 2
+      - push current value of the index to every even position of the new array
+
+  Read:
+    - New array
+
+  Print:
+    - New array
+End
