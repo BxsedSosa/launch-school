@@ -1,12 +1,3 @@
-//need info from user
-  //loan amount
-  // APR
-  // loan duration
-
-//Break down info from user
-  // make apr convert down to monthly interest rate
-  //break down loan duration in months
-
 let readline = require('readline-sync');
 
 
@@ -18,8 +9,8 @@ function loanCalculator() {
   prompt('What is your loan amount?: \n');
   let loanAmount = readline.question();
 
-  while (!Number(loanAmount)) {
-    prompt('Enter a number value!: \n');
+  while (Number(loanAmount) === 0 || !Number(loanAmount)) {
+    prompt('Enter a number value or number bigger than 0!: \n');
     loanAmount = readline.question();
   }
 
@@ -27,14 +18,19 @@ function loanCalculator() {
   prompt('(Enter whole number) \n');
   let loanApr = parseInt(readline.question());
 
-  while (!Number(loanApr)) {
-    prompt('Enter a number value!: \n');
+  while (Number(loanApr) === 0 || !Number(loanApr)) {
+    prompt('Enter a number value or number bigger than 0!: \n');
     loanApr = parseInt(readline.question());
   }
 
   prompt('What is the loan duration?: ');
   prompt('(Enter duration in years) \n');
   let loanDuration = readline.question();
+
+  while (Number(loanDuration) === 0 || !Number(loanDuration)) {
+    prompt('Enter a number value or number bigger than 0!: \n');
+    loanDuration = parseInt(readline.question());
+  }
 
   let monthlyApr = (loanApr * 0.01) / 12;
   monthlyApr.toFixed(4);
