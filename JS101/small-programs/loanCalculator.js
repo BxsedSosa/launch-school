@@ -1,23 +1,22 @@
-let readline = require('readline-sync');
-
+const readline = require('readline-sync');
+const MESSAGE = require('./loanCalulator.json')
 
 function loanCalculator() {
 
   while(true) {
-
-    console.log('')
-    prompt('Welcome to Loan Calculator!');
-    console.log('--------------------------------------------------------- \n');
+    console.log();
+    prompt(MESSAGE.welcomeMessage);
+    console.log(MESSAGE.space);
   
-    prompt('What is your loan amount?: \n');
+    prompt(MESSAGE.amountMessage);
     let loanAmount = readline.question();
   
     while (Number(loanAmount) === 0 || !Number(loanAmount)) {
-      prompt('Enter a number value or number bigger than 0!: \n');
+      prompt(MESSAGE.error);
       loanAmount = readline.question();
     }
   
-    prompt('What is your loan APR?: ');
+    prompt(MESSAGE.aprMessage);
     prompt('(Enter whole number) \n');
     let loanApr = parseInt(readline.question());
   
@@ -25,20 +24,20 @@ function loanCalculator() {
       if (loanApr === 0) {
         break;
       } else {
-        prompt('Enter a number value or number bigger than 0!: \n');
+        prompt(MESSAGE.error);
         loanApr = parseInt(readline.question());  
       }
     }
   
-    prompt('What is the loan duration?: ');
+    prompt(MESSAGE.durationMessage);
     prompt('(Enter duration in years) \n');
     let loanDuration = readline.question();
   
     while (Number(loanDuration) === 0 || !Number(loanDuration)) {
-      prompt('Enter a number value or number bigger than 0!: \n');
+      prompt(MESSAGE.error);
       loanDuration = parseInt(readline.question());
     }
-  
+
     let monthlyApr = (loanApr * 0.01) / 12;
     monthlyApr.toFixed(4);
     let monthlyDuration = loanDuration * 12;
@@ -51,10 +50,7 @@ function loanCalculator() {
     } else {
       console.log(`Your Monthly payments will be $${monthlyPayment.toFixed(2)} \n`);
     }
-  
-
-    tryAgain()
-    
+    tryAgain();
     break;
   }
 }
@@ -64,13 +60,11 @@ function tryAgain() {
   let answer = Number(readline.question());
   if (answer === 1) {
     loanCalculator();
-  } else {
-    return;
   }
 }
 
 function prompt(message) {
-  console.log(`=> ${message}`)
+  console.log(`=> ${message}`);
 }
 
-loanCalculator()
+loanCalculator();
