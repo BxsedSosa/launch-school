@@ -56,7 +56,7 @@ function loanCalculator() {
 }
 
 function tryAgain() {
-  console.log('Would you like to try again? 1) Yes or 2) No: \n');
+  console.log(MESSAGE.againMessage);
   let answer = Number(readline.question());
   if (answer === 1) {
     loanCalculator();

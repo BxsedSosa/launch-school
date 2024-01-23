@@ -4,5 +4,6 @@
   "amountMessage": "What is your loan amount?: \n",
   "aprMessage" : "What is your loan APR?: ",
   "durationMessage" : "What is the loan duration?: ",
-  "error" : "Enter a number value or number bigger than 0!: \n"
+  "error" : "Enter a number value or number bigger than 0!: \n",
+  "againMessage" : "Would you like to try again? 1) Yes or 2) No: \n"
 }
