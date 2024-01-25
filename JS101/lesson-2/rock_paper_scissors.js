@@ -7,7 +7,7 @@ function main() {
     let playerMove = getPlayerChoice();
     let cpuMove = getCpuMove();
 
-    getWinner(playerMove, cpuMove);
+    printWinner(playerMove, cpuMove);
     prompt(`You chose ${playerMove}, Computer chose ${cpuMove}`); return tryAgain();
 
   }
@@ -38,7 +38,7 @@ function prompt(message) {
   console.log(`=> ${message}`);
 }
 
-function getWinner(choice, computerChoise) {
+function printWinner(choice, computerChoise) {
   if ((choice === 'rock' && computerChoise === 'scissors') ||
       (choice === 'paper' && computerChoise === 'rock') ||
       (choice === 'scissors' && computerChoise === 'paper')
