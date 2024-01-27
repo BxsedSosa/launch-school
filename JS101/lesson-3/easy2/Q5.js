@@ -40,7 +40,7 @@ A:
 
 //C:
 
-function deleteIndex(numbers, deleteIndex) {
+function delIndex(numbers, deleteIndex) {
   let newArray = numbers.map((number, index) => {
     if (index !== deleteIndex) {
       return number;
@@ -48,14 +48,24 @@ function deleteIndex(numbers, deleteIndex) {
   });
   newArray = newArray.filter((number) => {
     if (number !== undefined) {
-      return number
+      return number;
     }
   })
   return newArray;
 }
 
-let array = [1, 2, 3, 4, 5]
-let delIndex = 2
-let result = deleteIndex(array, delIndex)
+let array = [1, 2, 3, 4, 5];
+let deleteIndex = 2;
+let result = delIndex(array, deleteIndex);
 
-console.log(result)
+console.log(result);
+
+//This way will be using methods to shorten down the problem the hint given in the question
+
+function deleteIndex2(numbers, deleteIndex) {
+  numbers.splice(deleteIndex, 1);
+  return numbers;
+}
+
+let result2 = deleteIndex2(array, deleteIndex);
+console.log(result2)
