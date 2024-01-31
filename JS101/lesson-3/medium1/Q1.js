@@ -7,3 +7,36 @@
   // The Flintstones Rock!
   //  The Flintstones Rock!
     // ...
+
+/*
+P:
+
+The question is asking to create a program that outputs 'Flintstones Rock!' But adding a space every time it prints it out again
+
+*/
+
+/*
+E:
+
+Input: 
+  'The Flintstones Rock!'
+
+Output:
+  The Flintstones Rock!
+   The Flintstones Rock!
+    The Flintstones Rock!
+     The Flintstones Rock!
+      ...
+*/
+
+/*
+D:
+
+*/
+
+/*
+A:
+
+*/
+
+//C:
