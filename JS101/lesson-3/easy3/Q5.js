@@ -9,3 +9,7 @@
 // }
 
 // Try to come up with at least two different solutions.
+
+function isColorValid(color) {
+  return color === "blue" || color === "green";
+}
