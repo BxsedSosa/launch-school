@@ -32,11 +32,29 @@ Output:
 /*
 D:
 
+Data structures needed:
+
+  String - 
+  'The Flintstones Rock!'
 */
 
 /*
 A:
 
+  Create a for loop
+    -adding a '' for each index iteration
+    -console.log each iteration
+
 */
 
 //C:
+
+function repeatString(string, occurances) {
+  
+  for (let i = 0; i < occurances; i++) {
+    string = `${' '.repeat(i)}${string}`;
+    console.log(string)
+  }
+}
+
+repeatString('The Flintstones Rock!', 5);
