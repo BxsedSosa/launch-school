@@ -19,3 +19,39 @@
 //   }
 //   return buffer;
 // }
+
+/*
+P:
+
+The questions here is asking givin the code. is there a difference of implementation of the functions and how they work?
+*/
+
+/*
+E:
+
+  NA
+
+*/
+
+/*
+D:
+
+*/
+
+/*
+A:
+
+  The difference of the 2 functions
+
+  in the first one it uses .push() method which is a mutating method.
+
+  in the second one it uses the .concat() method which creates a new array and you have to save it to a new variable
+
+*/
+
+/*
+Answer:
+
+Yes, there is a difference. While both functions have the same return value, the first implementation mutates the argument represented by buffer. That is, the caller will see that the array is different when the function returns. The rollingBuffer2 implementation doesn't mutate the argument specified by the value of buffer.
+
+*/
