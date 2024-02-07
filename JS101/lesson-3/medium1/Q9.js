@@ -13,3 +13,32 @@
 // What does the following code output?
 
 // console.log(rps(rps(rps("rock", "paper"), rps("rock", "scissors")), "rock"));
+
+/*
+P:
+
+Problem is asking for what the console will log after the function is run
+*/
+
+/*
+E:
+
+input:
+console.log(rps(rps(rps("rock", "paper"), rps("rock", "scissors")), "rock"));
+
+*/
+
+/*
+D:
+
+data needed:
+  strings
+*/
+
+/*
+A:
+
+from my understanding i think the answer will come out to paper after all the functions run
+*/
+
+//The outermost call determines the result of comparing rps(rps("rock", "paper"), rps("rock", "scissors")) against rock. That means that we must evaluate the two separate calls, rps("rock", "paper") and rps("rock", "scissors"), and combine them by calling rps on their results. Those innermost expressions return "paper" and "rock", respectively. Calling rps on those two values returns "paper", which, when evaluated against "rock", returns "paper".
