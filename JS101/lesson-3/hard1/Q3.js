@@ -61,11 +61,14 @@ console.log(`three is: ${three}`);
 /*
 P:
 
+Question above is asking what the 3 above code snippets will each run individually
 */
 
 /*
 E:
 
+Input:
+  3 sets of code snippets
 */
 
 /*
