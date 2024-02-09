@@ -38,11 +38,11 @@ A:
 //C:
 
 function logOdd(number) {
-  for (let i = 1; i < number; i++) {
+  for (let i = 1; i <= number; i++) {
     if (i % 2 === 1) {
       console.log(i);
     }
   }
 }
 
-logOdd(100);
+logOdd(99);
