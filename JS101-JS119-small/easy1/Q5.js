@@ -1,20 +1,16 @@
 /*
 
-How big is the room?
+Tip Calculator
 
-Build a program that asks the user to enter the length and width of a room in meters, and then logs the area of the room to the console in both square meters and square feet.
-
-Note: 1 square meter == 10.7639 square feet
-
-Do not worry about validating the input at this time. Use the readlineSync.prompt method to collect user input.
+Create a simple tip calculator. The program should prompt for a bill amount and a tip rate. The program must compute the tip, and then log both the tip and the total amount of the bill to the console. You can ignore input validation and assume that the user will enter numbers.
 
 Example:
 
-Enter the length of the room in meters:
-10
-Enter the width of the room in meters:
-7
-The area of the room is 70.00 square meters (753.47 square feet).
+What is the bill? 200
+What is the tip percentage? 15
+
+The tip is $30.00
+The total is $230.00
 
 */
 
