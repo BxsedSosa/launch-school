@@ -28,21 +28,71 @@ isLeapYear(400);       // true
 /*
 P:
 
+  question is asking to create a program that will take a year and determine if its a leap year returnnig true or false
 */
 
 /*
 E:
-
+  Input:                 Output:
+  isLeapYear(2016);      // true
+  isLeapYear(2015);      // false
+  isLeapYear(2100);      // false
+  isLeapYear(2400);      // true
+  isLeapYear(240000);    // true
+  isLeapYear(240001);    // false
+  isLeapYear(2000);      // true
+  isLeapYear(1900);      // false
+  isLeapYear(1752);      // true
+  isLeapYear(1700);      // false
+  isLeapYear(1);         // false
+  isLeapYear(100);       // false
+  isLeapYear(400);       // true
 */
 
 /*
 D:
 
+  data needed:
+    number
 */
 
 /*
 A:
 
+  create function with 1 parameter
+    parameter = number
+
+  if number % 4 equal to 0 
+    if number % 100 NOT equal to 0
+      return true
+    else if number % 400 equal to 0
+      return true
+  return false
 */
 
 //C:
+
+function isLeapYear(number) {
+  if (number % 4 === 0) {
+    if (number % 100 !== 0) {
+      return true;
+    } else if (number % 400 === 0) {
+      return true;
+    }
+  }
+  return false;
+}
+
+console.log(isLeapYear(2016));      // true
+console.log(isLeapYear(2015));      // false
+console.log(isLeapYear(2100));      // false
+console.log(isLeapYear(2400));      // true
+console.log(isLeapYear(240000));    // true
+console.log(isLeapYear(240001));    // false
+console.log(isLeapYear(2000));      // true
+console.log(isLeapYear(1900));      // false
+console.log(isLeapYear(1752));      // true
+console.log(isLeapYear(1700));      // false
+console.log(isLeapYear(1));         // false
+console.log(isLeapYear(100));       // false
+console.log(isLeapYear(400));       // true
