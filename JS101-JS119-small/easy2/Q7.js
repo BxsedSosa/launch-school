@@ -15,3 +15,25 @@ console.log(xor(1, 1) === false);         // true
 console.log(xor(true, true) === false);   // true
 
 */
+
+/*
+P:
+
+*/
+
+/*
+E:
+
+*/
+
+/*
+D:
+
+*/
+
+/*
+A:
+
+*/
+
+//C:

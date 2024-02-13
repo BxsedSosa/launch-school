@@ -14,3 +14,25 @@ centerOf('Launchschool');      // "hs"
 centerOf('x');                 // "x"
 
 */
+
+/*
+P:
+
+*/
+
+/*
+E:
+
+*/
+
+/*
+D:
+
+*/
+
+/*
+A:
+
+*/
+
+//C:

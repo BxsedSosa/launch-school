@@ -14,3 +14,25 @@ console.log(oddities([123])); // logs [123]
 console.log(oddities([])); // logs []
 
 */
+
+/*
+P:
+
+*/
+
+/*
+E:
+
+*/
+
+/*
+D:
+
+*/
+
+/*
+A:
+
+*/
+
+//C:

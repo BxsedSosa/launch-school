@@ -9,3 +9,25 @@ Example:
 console.log(multiply(5, 3) === 15); // logs true
 
 */
+
+/*
+P:
+
+*/
+
+/*
+E:
+
+*/
+
+/*
+D:
+
+*/
+
+/*
+A:
+
+*/
+
+//C:

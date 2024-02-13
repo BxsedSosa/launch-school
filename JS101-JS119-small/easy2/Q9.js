@@ -10,3 +10,25 @@ Example Output:
 Teddy is 69 years old!
 
 */
+
+/*
+P:
+
+*/
+
+/*
+E:
+
+*/
+
+/*
+D:
+
+*/
+
+/*
+A:
+
+*/
+
+//C:
