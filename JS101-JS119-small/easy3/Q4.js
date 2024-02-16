@@ -33,3 +33,25 @@ findFibonacciIndexByLength(10000n) === 47847n;
 // The last example may take a minute or so to run.
 
 */
+
+/*
+P:
+
+*/
+
+/*
+E:
+
+*/
+
+/*
+D:
+
+*/
+
+/*
+A:
+
+*/
+
+//C:

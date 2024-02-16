@@ -19,3 +19,25 @@ The blue dog walks quickly over the lazy dog.
 The dog quickly walks up blue Joe's turtle.
 
 */
+
+/*
+P:
+
+*/
+
+/*
+E:
+
+*/
+
+/*
+D:
+
+*/
+
+/*
+A:
+
+*/
+
+//C:

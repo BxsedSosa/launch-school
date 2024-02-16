@@ -9,3 +9,25 @@ Example:
 cleanUp("---what's my +*& line?");    // " what s my line "
 
 */
+
+/*
+P:
+
+*/
+
+/*
+E:
+
+*/
+
+/*
+D:
+
+*/
+
+/*
+A:
+
+*/
+
+//C:
