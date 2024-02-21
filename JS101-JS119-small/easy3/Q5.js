@@ -84,8 +84,8 @@ A:
 
 function triangle(num) {
     for (let i = 1; i <= num; i++) {
-        starLen = '*'.repeat(i)
-        spaceLen = ' '.repeat(num - i)
+        let starLen = '*'.repeat(i)
+        let spaceLen = ' '.repeat(num - i)
         console.log(`${spaceLen} ${starLen}`);
     }
 }
